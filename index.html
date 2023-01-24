@@ -8,27 +8,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="title">Library</h1>
-    <forms id ="form">
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title">
-        <br>
-        <label for="author">Author</label>
-        <input type="text" id="author" name="author">
-        <br>
-        <label for="pages">Pages</label>
-        <input type="number" id="pages" name="pages">
-        <br>
-        <label for="Read">Read</label>
-        <input type="text" id="read" name="read">
-        <br>
-        <input type = "button" id="add-book" onclick="addBooktoLibrary()" onclick="generateTable(table,data)" value="Submit">
-        <input type = "button" id="newBook" value ="New Book">
-    </forms>
-    <table class="Books">
-       
-
-    </table>
+    <h1 class="Header">図書館</h1>
+        <button id="myBtn">Add Book</button>
+        <div class = "card-container">
+            <div class="cards">
+            <p class="book-desc">
+                <h1 class ="book-title">Title:Peter Parker</p>
+                <h1 class ="book-author">Author:Lasagna</h1>
+                <h1 class ="book-pages">Pages:121</h1>
+                <h2 class ="book-read">Read:No</h2>
+            </p>
+            </div>
+        </div>
+   <div id="forms-modal" class="modal">
+    <div class=form-content>
+        <span class = "close">&times</span>
+        <p id ="form-inside">
+            <forms id="form">
+                <label for="title">Title</label>
+                <br>
+                <input type="text" id="title" name="title">
+                <br>
+                <label for="author">Author</label>
+                <br>
+                <input type="text" id="author" name="author">
+                <br>
+                <label for="pages">Pages</label>
+                <br>
+                <input type="number" id="pages" name="pages">
+                <br>
+                <label for="Read">Read</label>
+                <br>
+                <input type="text" id="read" name="read">
+                <br>
+                <input type = "submit" id="add-book" onclick="addBooktoLibrary()" value="Add Book">
+            </forms>
+        </p>
+    </div>
+    </div>
     <script src ="javascript.js"></script>
 </body>
 </html>
