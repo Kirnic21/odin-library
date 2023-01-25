@@ -1,7 +1,4 @@
 
-const bookPlaceholder = new Book('asd', 'asda', 'dsa', 'Dsad');
-const bookPlaceholder2 = new Book('asdss', 'assdada', 'dsasaa', 'sadsaDsad');
-const library = [bookPlaceholder, bookPlaceholder2];
 // modal
 const modal = document.getElementById("forms-modal");
 const btn = document.getElementById("myBtn")
@@ -9,23 +6,38 @@ const span = document.getElementsByClassName("close")[0];
 //cards
 const container = document.querySelector(".card-container")
 
-function createCards()
-{
-  let newCard=document.createElement("div")
-  newCard.classList.add("cards")
-  for(key in library){
-  console.log(library[key])
-  container.appendChild(newCard)
-  newCard.appendChild(text)
-  }
-}
 
-function Book(name, author, pages, read) {
+
+function Book(Name, Author, Pages, Read) {
 // constructor
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+  this.Name = Name;
+  this.Author = Author;
+  this.Pages = Pages;
+  this.Read = Read;
+}
+const book1 = new Book("1984","Jeff Kinney","123","yes")
+const library = [book1];
+function createCards(){
+  const newCard=document.createElement("div")
+  newCard.classList.add("cards")
+  const para= document.createElement("p")
+  para.classList.add("para")
+  for(let key in library)
+  {
+    let values = Object.entries(library[key])
+    for(let i in values)
+    {
+      const head = document.createElement("h1")
+
+      let string = values[i].join(":")
+      let text2= document.createTextNode(string)
+      para.appendChild(head)
+      head.appendChild(text2)
+    }
+    container.appendChild(newCard)
+    newCard.appendChild(para)
+
+  }
 }
 
 function addBooktoLibrary(newBook, title, author, pages, read) {
@@ -35,9 +47,7 @@ function addBooktoLibrary(newBook, title, author, pages, read) {
   newBook.pages = document.querySelector('#pages').value;
   newBook.read = document.querySelector('#read').value;
   library.push(newBook);
-  console.log(library);
 }
-
 btn.onclick = function(){
   modal.style.display = "block"
 }
@@ -49,4 +59,4 @@ window.onclick = function(event){
     modal.style.display = "none"
   }
 }
-createCards(0)
+createCards()
