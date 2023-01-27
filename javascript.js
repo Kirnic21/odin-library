@@ -17,7 +17,7 @@ submit.addEventListener("click",function(){
   let newBook = new Book(title,author,pages)
   createCard(newBook)
 })
-function Book(Name, Author, Pages, Read) {
+function Book(Name, Author, Pages) {
 // constructor
   this.Name = Name;
   this.Author = Author;
