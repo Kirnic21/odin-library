@@ -17,13 +17,14 @@ submit.addEventListener("click",function(){
   let newBook = new Book(title,author,pages)
   createCard(newBook)
 })
-function Book(Name, Author, Pages) {
+class Book{
+  constructor(Name, Author, Pages) {
 // constructor
   this.Name = Name;
   this.Author = Author;
   this.Pages = Pages;
 }
-
+}
 function createCard(newestBook)
 {
   library.push(newestBook)
@@ -33,7 +34,7 @@ function createCard(newestBook)
     const para= document.createElement("p")
     para.classList.add("para")
     newCard.dataset.id=newbookIndex
-    console.log(newCard.dataset.id)
+
   let newValues = Object.entries(library[newbookIndex])
   for(let i in newValues)
   {
@@ -52,8 +53,7 @@ function createCard(newestBook)
     delete library[newbookIndex];
     newCard.remove()
     newbookIndex=newbookIndex - 1
-    console.log(library)
-    console.log(newbookIndex)
+
   })
  const read= document.createElement("button")
  read.textContent="Not Read"

@@ -1,0 +1,41 @@
+[33mcommit eae655ebb59fd71f94be41e3f7eaa0e7971c9309[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/newBranch[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mnewBranch[m[33m)[m
+Author: Kirnic21 <marcelokenji12121@gmail.com>
+Date:   Fri Jan 27 14:54:15 2023 -0300
+
+    fix bug of blank card:
+
+[33mcommit b70dfca97260a0d2ad97e1287384075e1ac015d7[m
+Author: Kirnic21 <marcelokenji12121@gmail.com>
+Date:   Fri Jan 27 14:37:02 2023 -0300
+
+    Done read or not read button
+
+[33mcommit de3897dab8161b935a2781a725e1942eb45f0238[m
+Author: Kirnic21 <marcelokenji12121@gmail.com>
+Date:   Thu Jan 26 14:50:57 2023 -0300
+
+    fixed bug that create multiple cards
+
+[33mcommit a51d5af9094b5a160ef0ac8ecf287ddc467758ef[m
+Author: Kirnic21 <marcelokenji12121@gmail.com>
+Date:   Wed Jan 25 14:26:20 2023 -0300
+
+    done DOM manipulation stuff
+
+[33mcommit 7498b4b2faca0fc5e88754ff2f53b24638e263ca[m
+Author: Kirnic21 <marcelokenji12121@gmail.com>
+Date:   Tue Jan 24 20:33:46 2023 -0300
+
+    start card, done forms
+
+[33mcommit 03e3ecaa44121dc2930140fb2a3b62481574261e[m
+Author: Kirnic21 <marcelokenji12121@gmail.com>
+Date:   Tue Jan 24 11:00:50 2023 -0300
+
+    create function to add book into the library
+
+[33mcommit 97e4e2ab480a990fc52bfe7c6e217e19919b7dcf[m
+Author: MarcecloK <marcelokenji12121@gmail.com>
+Date:   Sat Jan 21 10:06:09 2023 -0300
+
+    Initial commit
