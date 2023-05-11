@@ -6,10 +6,11 @@ const btn = document.getElementById("myBtn")
 const span = document.getElementsByClassName("close")[0];
 //cards
 const container = document.querySelector(".card-container")
-const submit = document.querySelector("#submit")
+const submit = document.querySelector("#submit");
+const form = document.querySelector("form")
 //show cards
-submit.addEventListener("click",function(){
-  event.preventDefault()
+form.addEventListener("submit",function(e){
+  e.preventDefault()
   const title= document.querySelector("#title").value
   const author= document.querySelector("#author").value
   const pages = document.querySelector("#pages").value
