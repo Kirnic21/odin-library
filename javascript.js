@@ -6,11 +6,19 @@ const btn = document.getElementById("myBtn")
 const span = document.getElementsByClassName("close")[0];
 //cards
 const container = document.querySelector(".card-container")
+<<<<<<< HEAD
 const submit = document.querySelector("#submit")
 const form = document.querySelector("#form")
 //show cards
 form.addEventListener("submit",function(e){
   e.preventDefault();
+=======
+const submit = document.querySelector("#submit");
+const form = document.querySelector("form")
+//show cards
+form.addEventListener("submit",function(e){
+  e.preventDefault()
+>>>>>>> validation
   const title= document.querySelector("#title").value
   const author= document.querySelector("#author").value
   const pages = document.querySelector("#pages").value
