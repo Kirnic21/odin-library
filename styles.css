@@ -67,3 +67,6 @@
 }
 /* Rounded sliders */
 /* The switch - the box around the slider */
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
